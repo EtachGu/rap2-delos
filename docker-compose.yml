@@ -1,0 +1,18 @@
+version: '2'
+services:
+    mysql:
+        image: mysql
+        volumes:
+            - /docker/mysql:/var/lib/mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 123
+    rap2:
+        user: node
+        build: .
+        volumes:
+            - ./:/usr/app/rap2
+        ports:
+            - "3030:8080"
+        depends_on:
+            - mysql
