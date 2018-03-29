@@ -6,3 +6,5 @@ coverage
 npm-debug.log
 tmp
 .nyc_output
+yarn.lock
+yarn-error.log

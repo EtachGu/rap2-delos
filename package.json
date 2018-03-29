@@ -76,7 +76,7 @@
     "typescript": "^2.6.2"
   },
   "pre-commit": [
-    "check"
+    // "check"
   ],
   "engines": {
     "install-node": "8.9.3"

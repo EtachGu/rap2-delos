@@ -7,8 +7,9 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: 123
+        command: mysql -e 'CREATE DATABASE IF NOT EXISTS RAP2_DELOS_APP DEFAULT CHARSET utf8 COLLATE utf8_general_ci'
     rap2:
-        user: node
+        # user: node
         build: .
         volumes:
             - ./:/usr/app/rap2
