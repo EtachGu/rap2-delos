@@ -28,7 +28,7 @@ RAP2是在RAP1基础上重做的新项目，它包含两个组件(对应两个Gi
 
 ```sh
 
-# create database 先创建数据库
+# create database 先创建数据库 (option)
 mysql -e 'CREATE DATABASE IF NOT EXISTS RAP2_DELOS_APP DEFAULT CHARSET utf8 COLLATE utf8_general_ci'
 
 # initialize 初始化
@@ -89,3 +89,14 @@ npm start
     * MySQL
     * Server
     * server: node
+
+## Docker deployment
+
+**requirement** 
+- docker
+- docker-compose
+
+```bash
+sudo docker-compose up
+```
+
