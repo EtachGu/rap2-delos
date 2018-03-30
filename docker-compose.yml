@@ -13,7 +13,7 @@ services:
         # user: node
         build: .
         volumes:
-            - ./:/usr/app/rap2
+            - /docker/app/rap2:/usr/app/rap2
         ports:
             - "3030:8080"
         depends_on:

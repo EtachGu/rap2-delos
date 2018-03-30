@@ -14,7 +14,7 @@ let config: IConfigOptions = {
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: '',
+    password: '123',
     database: 'RAP2_DELOS_APP_LOCAL',
     pool: {
       max: 5,
