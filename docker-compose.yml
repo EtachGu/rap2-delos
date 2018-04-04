@@ -15,7 +15,7 @@ services:
         volumes:
             - /docker/app/rap2:/usr/app/rap2
         ports:
-            - "3030:8080"
+            - "8080:8080"
         depends_on:
             - mysql
         # command:  mysql -h localhost -u root --password='123' -e 'CREATE DATABASE IF NOT EXISTS RAP2_DELOS_APP DEFAULT CHARSET utf8 COLLATE utf8_general_ci'
